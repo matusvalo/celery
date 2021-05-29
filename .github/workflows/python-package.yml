@@ -3,19 +3,7 @@
 
 name: Celery
 
-on:
-  push:
-    branches: [ master ]
-    paths:
-        - '**.py'
-        - '**.txt'
-        - '.github/workflows/python-package.yml'
-  pull_request:
-    branches: [ master ]
-    paths:
-        - '**.py'
-        - '**.txt'
-        - '.github/workflows/python-package.yml'
+on: [pull_request, push]
 
 jobs:
   build:
